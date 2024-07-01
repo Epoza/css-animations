@@ -21,6 +21,10 @@
   background-color: #ff4acc;
 }
 
+.black {
+  background-color: #000;
+}
+
 .square.red {
   transform: rotate(45deg);
 }
@@ -58,3 +62,48 @@
   opacity: 0.5;
 }
 
+button {
+  border: 1px solid black;
+}
+
+#car {
+  display: inline-block;
+  position: relative;
+}
+
+button {
+  border: 1px solid black;
+}
+
+button.blue {
+  margin-top: 5px;
+  width: 100px;
+  height: 40px;
+  transition: background-color 1s ease-in-out 0.1s, transform 5s ease-in-out 0s, border 1s ease-in-out 0.1s;
+}
+
+#car:hover button.blue {
+  background-color: lightblue;
+  border: 3px dotted purple;
+  transform: translateX(300px);
+}
+
+#wheels {
+  width: 100px;
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  transition: transform 5s ease-in-out 0s, opacity 0.5s ease-in-out;
+}
+
+.wheel {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(-10px);
+}
+
+#car:hover #wheels {
+  transform: translateX(300px);
+  opacity: 1;
+}
