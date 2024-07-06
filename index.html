@@ -25,7 +25,21 @@
       <div class="black wheel"></div>
     </div>
   </div>
-  
-  
+  <button class="red" id="open-modal-button" onclick="openModal()">Open Modal</button>
+  <div id="modal">
+    <div>You have opened the modal</div>
+    <button id="close-modal-button" onclick="closeModal()">Close Modal</button>
+  </div>
+  <script>
+    const modal = document.getElementById('modal');
+    function openModal() {
+      modal.classList.add('show')
+      
+    }
+
+    function closeModal() {
+      modal.classList.remove('show')
+    }
+  </script>
 </body>
 </html>
