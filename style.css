@@ -145,3 +145,27 @@ button.blue {
   transform: translate(-50%, -50%) translateY(0);
   opacity: 1;
 }
+
+.circle.animate {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: change-color 2s infinite alternate;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: blue;
+    border: 30px dotted orange;
+  }
+
+  50% {
+    background-color: #ff4acc;
+    border: 5px dashed yellow;
+  }
+
+  100% {
+    background-color: red;
+    border: 50px double green;
+  }
+}
